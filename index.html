@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Hobby page | Daniel</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
   </head>
   <body> 
     <!DOCTYPE html>
@@ -97,33 +98,33 @@
     </html>
     <!-- Main body of site -->
     <div
-      class="grid grid-colsl-1 xs:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 p-3"
+      class="grid grid-colsl-1 xs:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 p-3 flex"
     >
       <nav class="bg-slate-400 border-2 border-white-900 rounded-md">
         <h1 class="text-center text-xl font-bold">Form</h1>
-        <p1>this is a form to submit the question</p1>
+        <p1 class="text-lg">this is a form to submit the question</p1>
       </nav>
       <main class="bg-zinc-400 border-2 border-white-900 rounded-md">
         <h1 class="text-center text-xl font-bold">About me</h1>
         <iframe
-          class="mx-auto"
-          width="260"
-          height="115"
+          class="mx-auto rounded-md"
+          width="390"
+          height="235"
           src="https://www.youtube.com/embed/qi-_vCXwsfw?si=OTRKJoeac160mgOI"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
-        <p1>About me information</p1>
+        <p1 class="text-lg" >Hi! im daniel but most people call me DJ! Im an ex call of duty semi pro player and now play destiny 2 at a high level in raids and such. when im not gaming you can find me sleeping, hanging out with luna or with my friends! The video above is just a small sample of some of my gameplay that i thought was rather entertaining.</p1>
       </main>
       <nav class="bg-slate-400 border-2 border-white-900 rounded-md">
         <h1 class="text-center text-xl font-bold">Luna</h1>
-        <p1>this is luna</p1>
+        <img src="https://pbs.twimg.com/media/F5ROo1JagAA-K2f?format=jpg&name=large" alt="a picture of my cat luna" title="a picture of my cat luna" class="rounded-md max-w-full h-auto mx-auto" width="60%" height="60%">
+        <p1 class="text-lg">this is luna</p1>
       </nav>
     </div>
-    <div class="flex flex-col">   
-    <!-- carousel -->
+       <!-- carousel -->
 <div class="max-w-2xl mx-auto">
 
 	<div id="default-carousel" class="relative" data-carousel="static">
@@ -132,15 +133,15 @@
             <!-- Item 1 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
-                <img src="https://upload.wikimedia.org/wikipedia/en/0/05/Destiny_2_%28artwork%29.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                <img src="https://i.guim.co.uk/img/media/5200b243f7135e83c51356616366248fbbecd338/0_0_1800_1080/master/1800.jpg?width=1200&quality=85&auto=format&fit=max&s=81e1ec91ec8d996eb3bebf72111a77f5" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="two guardians fighting a dreg, closest has a rifle and the furthest has a sword" title="two guardians fighting a dreg, closest has a rifle and the furthest has a sword">
             </div>
             <!-- Item 2 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://upload.wikimedia.org/wikipedia/en/5/51/Borderlands_2_cover_art.png" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                <img src="https://m.media-amazon.com/images/I/71dhmZyNkML._AC_UF1000,1000_QL80_.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="a vault hunter hold a rifle as they fight a big group of robots" title="a vault hunter hold a rifle as they fight a big group of robots">
             </div>
             <!-- Item 3 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://upload.wikimedia.org/wikipedia/en/a/a1/Final_Fantasy_XIV%2C_A_Realm_Reborn_box_cover.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                <img src="https://eu-images.contentstack.com/v3/assets/blt95b381df7c12c15d/blt8c6bb9f567035f0a/63444f791b58d20f5e22d6c9/endwalker.jpg?quality=80&format=jpg&width=828" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="the warriors of light pose as a group" title="the warriors of light pose as a group">
             </div>
         </div>
         <!-- Slider indicators -->
@@ -164,14 +165,14 @@
         </button>
     </div>
 
-	<p class="mt-5"> <a class="text-blue-600 hover:underline"
-			href="https://flowbite.com/docs/getting-started/introduction/" target="_blank">Flowbite Documentation</a>.
+	<p class="mt-5"><a class="text-blue-600 hover:underline"
+			href="https://flowbite.com/docs/getting-started/introduction/" target="_blank"></a>
 	</p>
     <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
 </div>
         <!-- Footer -->
     <footer
-      class=""
+      class="flex flex-col items-center text-center text-white"
       style="background-color: #0a4275"
     >
       <div class="container p-6">
@@ -191,15 +192,14 @@
 
       <!--Copyright section-->
       <div
-        class="w-full p-4 text-center h-96"
+        class="w-full p-4 text-center h-16 "
         style="background-color: rgba(0, 0, 0, 0.2)"
       >
         Email me!
-        <a class="text-white" href="https://tailwind-elements.com/"
+        <a class="text-white " href="https://tailwind-elements.com/"
           >daniel6079@gmail.com</a
         >
       </div>
     </footer>
-</div>
   </body>
 </html>
