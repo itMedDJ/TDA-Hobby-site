@@ -3,109 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Hobby page | Daniel</title>
+    <title>My Hobby Page | Daniel</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <style>
+      #menu-toggle:checked + #menu {
+        display: block;
+      }
+    </style>
   </head>
-  <body> 
-    <!DOCTYPE html>
+  <body class="bg-neutral-400">
     <!-- Header -->
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Responsive Navbar by @rzcodes</title>
-        <style>
-          #menu-toggle:checked + #menu {
-            display: block;
-          }
-        </style>
-      </head>
-      <body>
-        <nav
-          class="lg:px-16 px-6 bg-white shadow-md flex flex-wrap items-center lg:py-0 py-2"
+    <nav
+      class="lg:px-16 px-6 bg-white shadow-md flex flex-wrap items-center lg:py-0 py-2"
+    >
+      <div class="flex-1 flex justify-between items-center">
+        <a  class="flex text-lg font-semibold">
+          <img
+            src="https://yt3.ggpht.com/yti/AOXPAcUu-zef_s5SvNDAhcafEiQEuFrh94W7gEDDKo-x=s108-c-k-c0x00ffffff-no-rj"
+            width="50"
+            height="50"
+            class="p-2"
+            alt="Daniels logo"
+          />
+          <div class="mt-3 text-blue-600">Daniels hobbies</div>
+        </a>
+      </div>
+      <label for="menu-toggle" class="cursor-pointer lg:hidden block">
+        <svg
+          class="fill-current text-gray-900"
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
         >
-          <div class="flex-1 flex justify-between items-center">
-            <a href="/" class="flex text-lg font-semibold">
-              <img
-                src="https://yt3.ggpht.com/yti/AOXPAcUu-zef_s5SvNDAhcafEiQEuFrh94W7gEDDKo-x=s108-c-k-c0x00ffffff-no-rj"
-                width="50"
-                height="50"
-                class="p-2"
-                alt="Rz Codes Logo"
-              />
-              <div class="mt-3 text-blue-600">Daniels hobbies</div>
-            </a>
-          </div>
-          <label for="menu-toggle" class="cursor-pointer lg:hidden block">
-            <svg
-              class="fill-current text-gray-900"
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-            >
-              <title>menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-            </svg>
-          </label>
-          <input class="hidden" type="checkbox" id="menu-toggle" />
-          <div
-            class="hidden lg:flex lg:items-center lg:w-auto w-full"
-            id="menu"
+          <title>menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        </svg>
+      </label>
+      <input class="hidden" type="checkbox" id="menu-toggle" />
+      <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+        <nav>
+          <ul
+            class="text-xl text-center items-center gap-x-5 pt-4 md:gap-x-4 lg:text-lg lg:flex lg:pt-0"
           >
-            <nav>
-              <ul
-                class="text-xl text-center items-center gap-x-5 pt-4 md:gap-x-4 lg:text-lg lg:flex lg:pt-0"
+            <li class="py-2 lg:py-0">
+              <a
+                class="text-blue-600 hover:pb-4 hover:border-b-4 hover:border-yellow-400"
+                href="index.html"
+                >Home</a
               >
-                <li class="py-2 lg:py-0">
-                  <a
-                    class="text-blue-600 hover:pb-4 hover:border-b-4 hover:border-yellow-400"
-                    href="index.html"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li class="py-2 lg:py-0">
-                  <a
-                    class="text-blue-600 hover:pb-4 hover:border-b-4 hover:border-yellow-400"
-                    href="destiny2.html"
-                  >
-                    Destiny 2
-                  </a>
-                </li>
-                <li class="py-2 lg:py-0">
-                  <a
-                    class="text-blue-600 hover:pb-4 hover:border-b-4 hover:border-yellow-400"
-                    href="ff14.html"
-                  >
-                    Final fantasy 14
-                  </a>
-                </li>
-                <li class="py-2 lg:py-0">
-                  <a
-                    class="text-blue-600 hover:pb-4 hover:border-b-4 hover:border-yellow-400"
-                    href="borderlands.html"
-                  >
-                    Borderlands
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+            </li>
+            <li class="py-2 lg:py-0">
+              <a
+                class="text-blue-600 hover:pb-4 hover:border-b-4 hover:border-yellow-400"
+                href="destiny2.html"
+                >Destiny 2</a
+              >
+            </li>
+            <li class="py-2 lg:py-0">
+              <a
+                class="text-blue-600 hover:pb-4 hover:border-b-4 hover:border-yellow-400"
+                href="ff14.html"
+                >Final Fantasy 14</a
+              >
+            </li>
+            <li class="py-2 lg:py-0">
+              <a
+                class="text-blue-600 hover:pb-4 hover:border-b-4 hover:border-yellow-400"
+                href="borderlands.html"
+                >Borderlands</a
+              >
+            </li>
+          </ul>
         </nav>
-      </body>
-    </html>
+      </div>
+    </nav>
+
     <!-- Main body of site -->
     <div
-      class="grid grid-colsl-1 xs:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 p-3 flex"
+      class="grid grid-cols-1 xs:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 p-3"
     >
       <nav class="bg-slate-400 border-2 border-white-900 rounded-md">
-        <h1 class="text-center text-xl font-bold">Form</h1>
-        <p1 class="text-lg">this is a form to submit the question</p1>
+        <h1 class="text-center text-xl font-bold">My Twitter Feed</h1>
+        <a
+          class="twitter-timeline"
+          data-height="450"
+          data-theme="dark"
+          href="https://twitter.com/GamerBr1t?ref_src=twsrc%5Etfw"
+          >Tweets by GamerBr1t</a
+        >
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
       </nav>
       <main class="bg-zinc-400 border-2 border-white-900 rounded-md">
-        <h1 class="text-center text-xl font-bold">About me</h1>
+        <h1 class="text-center text-xl font-bold">About Me</h1>
         <iframe
           class="mx-auto rounded-md"
           width="390"
@@ -116,88 +111,182 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
-        <p1 class="text-lg" >Hi! im daniel but most people call me DJ! Im an ex call of duty semi pro player and now play destiny 2 at a high level in raids and such. when im not gaming you can find me sleeping, hanging out with luna or with my friends! The video above is just a small sample of some of my gameplay that i thought was rather entertaining.</p1>
+        <p class="pl-6 mt-6 text-lg">
+          Hi! I'm Daniel, but most people call me DJ! I'm an ex Call of Duty
+          semi-pro player and now play Destiny 2 at a high level in raids and
+          such. When I'm not gaming, you can find me sleeping, hanging out with
+          Luna, or with my friends! The video above is just a small sample of
+          some of my gameplay that I thought was rather entertaining.
+        </p>
       </main>
       <nav class="bg-slate-400 border-2 border-white-900 rounded-md">
         <h1 class="text-center text-xl font-bold">Luna</h1>
-        <img src="https://pbs.twimg.com/media/F5ROo1JagAA-K2f?format=jpg&name=large" alt="a picture of my cat luna" title="a picture of my cat luna" class="rounded-md max-w-full h-auto mx-auto" width="60%" height="60%">
-        <p1 class="text-lg">this is luna</p1>
+        <img
+          src="https://pbs.twimg.com/media/F5ROo1JagAA-K2f?format=jpg&name=large"
+          alt="A picture of my cat Luna"
+          title="A picture of my cat Luna"
+          class="rounded-md max-w-full h-auto mx-auto"
+          width="60%"
+          height="60%"
+        />
+        <p class="mt-6 pl-5 text-lg">This is Luna</p>
       </nav>
     </div>
-       <!-- carousel -->
-<div class="max-w-2xl mx-auto">
 
-	<div id="default-carousel" class="relative" data-carousel="static">
+    <!-- Carousel -->
+    <div class="max-w-2xl mx-auto">
+      <div id="default-carousel" class="relative" data-carousel="static">
         <!-- Carousel wrapper -->
-        <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
-            <!-- Item 1 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
-                <img src="https://i.guim.co.uk/img/media/5200b243f7135e83c51356616366248fbbecd338/0_0_1800_1080/master/1800.jpg?width=1200&quality=85&auto=format&fit=max&s=81e1ec91ec8d996eb3bebf72111a77f5" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="two guardians fighting a dreg, closest has a rifle and the furthest has a sword" title="two guardians fighting a dreg, closest has a rifle and the furthest has a sword">
-            </div>
-            <!-- Item 2 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://m.media-amazon.com/images/I/71dhmZyNkML._AC_UF1000,1000_QL80_.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="a vault hunter hold a rifle as they fight a big group of robots" title="a vault hunter hold a rifle as they fight a big group of robots">
-            </div>
-            <!-- Item 3 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://eu-images.contentstack.com/v3/assets/blt95b381df7c12c15d/blt8c6bb9f567035f0a/63444f791b58d20f5e22d6c9/endwalker.jpg?quality=80&format=jpg&width=828" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="the warriors of light pose as a group" title="the warriors of light pose as a group">
-            </div>
+        <div
+          class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96"
+        >
+          <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <span
+              class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800"
+              >First Slide</span
+            >
+            <img
+              src="https://i.guim.co.uk/img/media/5200b243f7135e83c51356616366248fbbecd338/0_0_1800_1080/master/1800.jpg?width=1200&quality=85&auto=format&fit=max&s=81e1ec91ec8d996eb3bebf72111a77f5"
+              class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+              alt="Two guardians fighting a dreg, closest has a rifle and the furthest has a sword"
+              title="Two guardians fighting a dreg, closest has a rifle and the furthest has a sword"
+            />
+          </div>
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="https://m.media-amazon.com/images/I/71dhmZyNkML._AC_UF1000,1000_QL80_.jpg"
+              class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+              alt="A vault hunter holds a rifle as they fight a big group of robots"
+              title="A vault hunter holds a rifle as they fight a big group of robots"
+            />
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="https://eu-images.contentstack.com/v3/assets/blt95b381df7c12c15d/blt8c6bb9f567035f0a/63444f791b58d20f5e22d6c9/endwalker.jpg?quality=80&format=jpg&width=828"
+              class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+              alt="The warriors of light pose as a group"
+              title="The warriors of light pose as a group"
+            />
+          </div>
         </div>
         <!-- Slider indicators -->
-        <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        <div
+          class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2"
+        >
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 1"
+            data-carousel-slide-to="0"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 2"
+            data-carousel-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 3"
+            data-carousel-slide-to="2"
+          ></button>
         </div>
         <!-- Slider controls -->
-        <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
-            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                <span class="hidden">Previous</span>
-            </span>
+        <button
+          type="button"
+          class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+          data-carousel-prev
+        >
+          <span
+            class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              ></path>
+            </svg>
+            <span class="hidden">Previous</span>
+          </span>
         </button>
-        <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
-            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                <span class="hidden">Next</span>
-            </span>
+        <button
+          type="button"
+          class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+          data-carousel-next
+        >
+          <span
+            class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+            <span class="hidden">Next</span>
+          </span>
         </button>
+      </div>
+      <p class="mt-5">
+        <a
+          class="text-blue-600 hover:underline"
+          href="https://flowbite.com/docs/getting-started/introduction/"
+          target="_blank"
+        ></a>
+      </p>
+      <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
     </div>
 
-	<p class="mt-5"><a class="text-blue-600 hover:underline"
-			href="https://flowbite.com/docs/getting-started/introduction/" target="_blank"></a>
-	</p>
-    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
-</div>
-        <!-- Footer -->
+    <!-- Footer -->
     <footer
       class="flex flex-col items-center text-center text-white"
       style="background-color: #0a4275"
     >
       <div class="container p-6">
-          <p class="flex items-center justify-center">
-            <span class="mr-4">Lorem, ipsum dolor.</span>
-            <button
-              type="button"
-              class="inline-block rounded-full border-2 border-neutral-50 px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
-              data-te-ripple-init
-              data-te-ripple-color="light"
-            >
-              Email me!
-            </button>
-          </p>
-        </div>
+        <p class="flex items-center justify-center">
+          <span class="mr-4">Get in touch via email:</span>
+          <a
+            type="button"
+            class="inline-block rounded-full border-2 border-neutral-50 px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+            data-te-ripple-init
+            data-te-ripple-color="light"
+            href="mailto:daniel6079@gmail.com"
+          >
+            daniel6079@gmail.com
+          </a>
+        </p>
       </div>
-
-      <!--Copyright section-->
+      <!-- Copyright section -->
       <div
-        class="w-full p-4 text-center h-16 "
+        class="w-full p-4 text-center h-16"
         style="background-color: rgba(0, 0, 0, 0.2)"
       >
-        Email me!
-        <a class="text-white " href="https://tailwind-elements.com/"
-          >daniel6079@gmail.com</a
+        Get in touch on Twitter!
+        <a class="text-white" href="https://twitter.com/GamerBr1t"
+          >@GamerBr1t</a
         >
       </div>
     </footer>
